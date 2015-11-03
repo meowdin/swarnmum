@@ -1,0 +1,338 @@
+/* all layouts */
+
+
+
+/* Variables - only edit these */
+
+
+
+
+
+
+body{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color:#333333;
+}
+
+a{
+    color:#5394ca;
+    text-decoration:underline;
+}
+
+a:hover{
+    text-decoration:none;
+    color:#F36131
+}
+
+a img{border:none;}
+
+p{
+    margin: 0;
+    padding: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;;
+    padding: 5px 0 10px 0;
+    font-weight:normal;
+}
+
+h1{font-size: 3.3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+h4{font-size: 1.8em;}
+h5{font-size: .9em;}
+h6{font-size: .7em;}
+
+h1 a, h1 a:hover, h1{color:#336633;}
+h2 a, h2 a:hover, h2{color:#336633;}
+h3 a, h3 a:hover, h3{color:#497f49;}
+h4 a, h4 a:hover, h4{color:#589058;}
+h5 a, h5 a:hover, h5{color:#589058;}
+h6 a, h6 a:hover, h6{color:#589058;}
+    div.yola_gallery_widget{text-align:center;}
+    
+    div.yola_gallery_widget p.gallery_description{margin:0 !important;padding:0 0 25px 0 !important;}
+    div.yola_gallery_widget h2.gallery_description{margin:0 !important;padding:0 0 20px 0 !important;}
+
+    div.yola_gallery_widget a{border:none !important;}
+    div.yola_gallery_widget a img{border:none !important;}
+    div.yola_gallery_widget img{
+        -moz-border-radius:0 !important;
+        -webkit-border-radius:0 !important;
+        -khtml-border-radius:0 !important;
+        -o-border-radius:0 !important;
+        border-radius:0 !important;
+    }
+
+/* polaroid layout */
+
+    div.yola_gallery_widget div.polaroid span.item{
+        display:inline-block;
+        width:124px;
+        height:128px;
+        margin:0 10px 20px 10px;
+        background:url('polaroid.png') top left no-repeat;
+        text-align:left;
+    }
+
+    div.yola_gallery_widget div.polaroid span.item a.backing{
+        background:#bbb;
+        background:#bbb -webkit-gradient(linear, center top, center bottom, from(#aaa), to(#eee));
+        background:#bbb -moz-linear-gradient(center top, #aaa 0%, #eee 100%);
+        display:inline-block;
+        width:100px;
+        height:100px;
+        margin:12px 0 0 12px;
+        position:relative;
+        position:static\9; /* ie hack */
+        text-decoration:none;
+    }
+
+    div.yola_gallery_widget div.polaroid span.portrait a.backing{
+        background:#bbb;
+        background:#bbb -webkit-gradient(linear, center top, center bottom, from(#aaa), to(#eee));
+        background:#bbb -moz-linear-gradient(center top, #aaa 0%, #eee 100%);
+    }
+
+    div.yola_gallery_widget div.polaroid span.landscape a.backing{
+        background:#bbb;
+        background:#bbb -webkit-gradient(linear, center left, center right, from(#aaa), to(#eee));
+        background:#bbb -moz-linear-gradient(center left, #aaa 0%, #eee 100%);
+    }
+
+    div.yola_gallery_widget div.polaroid span.item a img{
+        border:none;
+    }
+
+    div.yola_gallery_widget div.polaroid span.item span.image{
+        display:inline-block;
+        width:100px;
+        height:100px;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-color:transparent;
+        -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.35) inset;
+        -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.35) inset;
+        box-shadow:0 0 5px rgba(0, 0, 0, 0.35) inset;
+    }
+
+    div.yola_gallery_widget div.polaroid span.item span.over-shadow{
+        -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.35) inset;
+        -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.35) inset;
+        box-shadow:0 0 5px rgba(0, 0, 0, 0.35) inset;
+        display:inline-block;
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        display:none\9; /* ie hack */
+    }
+    
+/* round-frame css */
+   
+    div.yola_gallery_widget div.round-frame a{
+        display:inline-block;
+        width:100px;
+        height:100px;
+        margin:0 0 20px 20px;
+        text-decoration:none;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        -khtml-border-radius:10px;
+        -o-border-radius:10px;
+        border-radius:10px;
+        position:relative;
+        position:static\9; /* ie hack */
+        font-size:0;
+        -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.55), 0 1px 0 rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.55) inset, 0 1px 0 rgba(255, 255, 255, 0.5);
+        box-shadow:0 0 5px rgba(0, 0, 0, 0.55) inset, 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+
+    div.yola_gallery_widget div.round-frame a span.shadow{
+        display:inline-block;
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:0;
+        left:0;
+        display:none\9; /* ie hack */
+    }
+
+    div.yola_gallery_widget div.round-frame a img{
+        float:left;
+    }
+
+/* round-corners */
+
+    div.yola_gallery_widget div.round-corners span.item{
+        display:inline-block;
+        width:130px;
+        height:130px;
+        margin:0 7px 15px 7px;
+        background:url('round-frame.png') top left no-repeat;
+        text-align:left;
+    }
+
+    div.yola_gallery_widget div.round-corners span.item a.backing{
+        background:#bbb;
+        background:#bbb -webkit-gradient(linear, center top, center bottom, from(#aaa), to(#eee));
+        background:#bbb -moz-linear-gradient(center top, #aaa 0%, #eee 100%);
+        display:inline-block;
+        width:100px;
+        height:100px;
+        margin:15px 0 0 15px;
+        position:relative;
+        text-decoration:none;
+    }
+
+    div.yola_gallery_widget div.round-corners span.portrait a.backing{
+        background:#bbb;
+        background:#bbb -webkit-gradient(linear, center top, center bottom, from(#aaa), to(#eee));
+        background:#bbb -moz-linear-gradient(center top, #aaa 0%, #eee 100%);
+    }
+
+    div.yola_gallery_widget div.round-corners span.landscape a.backing{
+        background:#bbb;
+        background:#bbb -webkit-gradient(linear, center left, center right, from(#aaa), to(#eee));
+        background:#bbb -moz-linear-gradient(center left, #aaa 0%, #eee 100%);
+    }
+
+    div.yola_gallery_widget div.round-corners span.item a img{
+        border:none;
+    }
+
+    div.yola_gallery_widget div.round-corners span.item span.image{
+        display:inline-block;
+        width:100px;
+        height:100px;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-color:transparent;
+    }
+
+    div.yola_gallery_widget div.round-corners span.item span.round-corners-shadow{
+        background:url('round-frame-shadow.png') top left no-repeat;
+        _behavior: url('iepngfix.htc');
+        display:inline-block;
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+    }
+	
+	
+	body{
+    background-color:#356734;
+    background-image: url(files/background.png);
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-attachment:;
+    text-align:center;
+    margin:0;
+    padding:45px 0 0 0;
+}
+
+div.ys_wrap{
+    width:1000px;
+    margin:0 auto;
+    text-align:left;
+    padding-bottom:20px;
+}
+
+div.ys_heading{
+    padding:0 0 0 30px;
+}
+
+div.ys_heading h1{
+    margin:0;
+    padding:5px 0;
+}
+
+div.ys_heading h1 a,
+div.ys_heading h1 a:hover{
+    color:#fff;
+    padding:0 15px;
+    margin:0;
+    text-decoration:none;
+    font-size:35px;
+}
+
+div.ys_nav{
+    padding:35px 15px 0 55px;
+}
+
+div.ys_nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+div.ys_nav ul li{
+    float:left;
+    padding:0 5px 0 5px;
+}
+div.ys_nav ul li.current_page_item a{
+    background:#fff;
+    color:#356734;
+    font-weight:bold;
+}
+
+div.ys_nav ul li a{
+    color:#fff;
+    display:block;
+    padding:10px 15px;
+    font-size:13px;
+    text-decoration:none;
+}
+div.ys_nav ul li.current_page_item a:hover{
+   color:#fff;
+   background:transparent;
+}
+
+div.ys_nav ul li a:hover{
+    color:#356734;
+    background:#b1d4b0;
+}
+
+
+div.ys_header{
+    clear:both;
+    background:url(files/white-corners.png) top left no-repeat;
+    _behavior: url(files/iepngfix.htc);
+    height:220px;
+}
+
+div.ys_banner_wrap{
+    padding:20px 0 0 20px;
+}
+
+div#sys_banner{
+    width:960px;
+    height:200px;
+    background:#fff url(files/Singapore.jpg.cropped960x200o0%2C0s962x200.jpg) top center no-repeat;
+}
+
+div.ys_banner_over{
+    width:960px;
+    height:200px;
+    background:url(files/banner-corners.png) top left no-repeat;
+    _behavior: url(files/iepngfix.htc);
+}
+
+div#content{
+    background:#fff;
+    padding:20px 20px 0 20px;
+}
+
+div.ys_bottom{
+    height:40px;
+    background:url(files/white-corners-bottom.png) bottom right no-repeat;
+    _behavior: url(files/iepngfix.htc);
+}
